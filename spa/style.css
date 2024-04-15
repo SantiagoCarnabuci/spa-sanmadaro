@@ -1,0 +1,329 @@
+:root{
+    --font-small: 0.8rem;
+    --font-medium: 1.2rem;
+    --font-large: 1.6rem;
+    --font-family:Arial, Helvetica, sans-serif;
+
+    --color-background-dark:#458282;
+    --color-background-medium:#9fdede;
+    --color-background-light:#e9fafa;
+    --color-background-complementary:#eeafaf;
+    --color-background-tri-yellow:#eeeeaf;
+    --color-background-tri:#ceafee;
+    --color-background-green:#ceefaf;
+    --color-font:#000000;
+    --color-font-light:#ffffff;
+
+    --margin-small: 0.8rem;
+    --margin-medium: 1.2rem;
+    --margin-large: 1.6rem;
+
+    --padding-small: 0.8rem;
+    --padding-medium: 1.2rem;
+    --padding-large: 1.6rem;
+
+
+}
+/*estilos generales*/
+body{
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+html{
+   background: linear-gradient(var(--color-background-dark), var(--color-background-light));
+   width: 100%;
+}
+
+/*Estilos del nav*/
+nav{
+    display: flex;
+    margin: var(--margin-small);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--padding-small);
+}
+nav h1 img{
+    box-sizing: content-box;
+    display: inline-block;
+    width: 30%;
+    border-radius: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;    
+}
+nav ul li a{
+    display: inline;
+    margin-right: var(--margin-medium);
+    text-decoration: none;
+    color: var(--color-font-light);
+    font-size: var(--font-large);
+}
+nav ul li a:hover{
+    border-radius: 30px;
+    color: var(--color-background-tri);
+    text-shadow: 1px 2px 2px  var(--color-background-tri-yellow);
+    text-shadow: 0px 0px 20px var(--color-background-tri-yellow);
+}
+
+/*Estilos del banner*/
+.banner-content{
+    background: url(../spa/assets/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    text-align: right;
+    color:var(--color-background-tri-yellow);
+}
+.banner-content h2{   
+    font-size: var(--font-large);
+    margin-right: 1rem;
+    color: var(--color-background-tri-yellow);
+}
+.banner-content p{
+    font-size: var(--font-medium);
+    margin-right: 1rem;
+    color: var(--color-background-tri-yellow);
+    text-align: right;   
+}  
+
+/*Estilos de seccion nuestro equipo*/
+
+#empleados {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-height: 25%;
+    text-align: center;
+}
+.empleados h2{
+    color: var(--color-font-light);
+    font-size: var(--font-large);
+    margin-bottom: 2rem;
+}
+
+.empleado {
+    width: 30%;
+    height: 10%;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    background-color: var(--color-background-medium);
+    text-align: center;
+    border: 2px solid var(--color-background-green);
+    border-radius: 10px;
+    display: inline-block;
+}
+.empleados h3{
+    display: block;
+    font-size: var(--font-medium);
+    margin-bottom: var(--margin-small);
+    font-weight: bold;
+}
+
+.empleado img {
+    width: 50%;
+    height: 25%;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 2px solid var(--color-background-dark);
+}
+.empleado p{
+    font-weight: bold;
+}
+.empleado .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:var(--color-background-dark);
+    color: var(--color-background-tri-yellow);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.empleado ul{
+    padding: 0;
+    text-align: left;
+}
+.empleado ul li{
+    list-style: none;
+}
+
+.empleado a{
+    display: block;
+    margin-top: var(--margin-small);
+    padding: var(--padding-small);
+    background-color: var(--color-btn);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 100ms;
+}
+.empleado a:hover{ 
+    background-color: var(--color-background-tri);
+    color: var(--color-background-dark);   
+    font-weight: bold; 
+}
+
+/*estilos de mapa*/
+#ubicacion{
+    background-color: var(--color-background);
+}
+#ubicacion h2{
+    font-size: var(--font-large);
+    text-align: center;
+}
+.mapa{
+    margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid var(--color-background-dark);
+    margin: 1.5rem auto;
+}
+
+footer{
+    background-color: var(--color-background-dark);
+    color: var(--color-font-light);
+    padding: var(--padding-small);
+    text-align: center;
+}
+
+/* HTML Servicios*/
+.servicio {
+  text-align: center;
+  margin: 1rem;
+}
+.titulo-servicio {
+    display: flex;
+    margin:var(--margin-small);
+    margin-bottom: 0;
+    padding: var(--padding-small);
+    text-align: center;
+    align-items: center;
+    font-size: var(--font-large);
+    font-weight: bold;
+    justify-content: space-between;
+    cursor: pointer;
+    background: var(--color-background-tri);
+    
+}
+
+.descripcion {
+    background: linear-gradient(var(--color-background-tri), var(--color-background-light));
+    display: none;
+    margin: var(--margin-small);
+    padding: var(--padding-small);
+    margin-top: 0;
+}
+.descripcion.mostrar {
+  display: block;
+}
+/*HTML Contacto*/
+
+form{
+    padding: var(--padding-small);
+    margin: var(--margin-small);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-font);
+}
+input{
+    border: 2px solid var(--color-background-dark);
+    margin-bottom: 1rem;
+}
+label,legend{
+    font-size: var(--font-medium);
+    font-weight: bold;
+    display: block;
+    margin: 0.5rem;
+}
+
+.enviar{
+    width: 40%;
+    padding: var(--padding-small);
+    font-size: var(--font-medium);
+    color: var(--color-background-tri-yellow);
+    background-color: var(--color-background-dark);
+    border: 2px solid var(--color-background-dark);
+    border-radius: 20px;
+    /*transition: 1s all;*/
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: var(--color-background-tri-yellow);
+    color: var(--color-background-tri);
+    border: 2px solid var(--color-background-tri);
+    transform: scale(1.1);
+}
+
+.horarios{
+display: flex;
+justify-content: center;
+}
+table{
+    margin:var(--margin-small);
+    text-align: center;
+}
+thead{
+    background: var(--color-background-dark);
+    color: var(--color-font-light);
+    padding: var(--padding-small);
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid var(--color-background-dark);
+    padding: var(--padding-small);
+}
+
+/*HTML Servicios*/
+.reserva h2{
+    text-align: center;
+    font-size: var(--font-large);
+    color: var(--color-font-light);
+    margin: var(--margin-medium);
+}
+.reserva form {
+    max-width: 400px;
+    margin: var(--margin-medium) auto;
+    background-color:var(--color-background-tri);
+    padding: var(--padding-small);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.reserva label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: var(--margin-small);
+}
+.reserva input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: var(--padding-small);
+  border: 1px solid var(--color-background-green);
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: var(--font-medium);
+}
+.reserva .reservar{
+    width: 50%;
+    padding: var(--padding-small);
+    margin: var(--margin-small);
+    font-size: var(--font-medium);
+    color: var(--color-background-tri-yellow);
+    background-color: var(--color-background-dark);
+    border: 2px solid var(--color-background-dark);
+    border-radius: 20px;
+    /*transition: 1s all;*/
+    cursor: pointer;
+}
+.reservar:hover{
+    background-color: var(--color-background-tri-yellow);
+    color: var(--color-background-dark);
+    border: 2px solid var(--color-background-tri);
+    transform: scale(1.1);
+}
